@@ -5,29 +5,44 @@
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Judo Uherské Hradiště</title>
+    <title>Iron Lab - Galerie</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar1 navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Judo Club - Uherské Hradiště</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Iron Lab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="Home.html">Domů</a></li>
-          <li class="nav-item"><a class="nav-link" href="o nas.html">O nás</a></li>
-          <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
-          <li class="nav-item"><a class="nav-link" href="kontakty.html">Kontakty</a></li>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html">Domů
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakty.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sluzby.html">Služby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">O nás</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Další</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="treninky.html">Tréninky</a></li>
-              <li><a class="dropdown-item" href="spoluzaci.html">Spolužáci</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="treninky.html">Ceník</a> <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla -->
+              <a class="dropdown-item" href="rezervace.html">Rezervace</a> <!-- tady udělam ten form na udělaní registrace -->
+              <a class="dropdown-item" href="galerie.html">Galerie</a> <!-- splnit nějaké random fotky z posilky -->
+              <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
           </li>
         </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
