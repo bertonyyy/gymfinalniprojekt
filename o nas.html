@@ -1,17 +1,20 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Iron Lab - O nás</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Iron Lab - O nás</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Iron Lab</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="Home.html">Iron Lab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor02">
@@ -31,105 +34,80 @@
             <a class="nav-link" href="o nas.html">O nás</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Další</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="cenik.html">Ceník</a> <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla -->
-              <a class="dropdown-item" href="rezervace.html">Rezervace</a> <!-- tady udělam ten form na udělaní registrace -->
+              <a class="dropdown-item" href="treninky.html">Ceník</a>
+              <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla -->
+              <a class="dropdown-item" href="rezervace.html">Rezervace</a>
+              <!-- tady udělam ten form na udělaní registrace -->
               <a class="dropdown-item" href="galerie.html">Galerie</a> <!-- splnit nějaké random fotky z posilky -->
               <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control me-sm-2" type="search" placeholder="Adresa?...">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Najít</button>
         </form>
       </div>
     </div>
   </nav>
   <div class="container py-5 text-black onasmezery">
-    <h2 class="text-uppercase fw-bold nadpissrovnani">O nás</h2>
-    <p class="lead onasmezery">
-        Náš oddíl se věnuje výchově judistů od mláďat až po tréninky veteránů. Hlavním zaměřením je trénink sportovního juda.
-        Účastníme se mnoha závodů ve všech věkových kategoriích a během roku pořádáme dva turnaje pro děti. 
-        V současné době má náš oddíl okolo 75 členů.
+    <h2 class="text-uppercase fw-bold text-center mt-5">O nás</h2>
+    <p class="lead text-center">
+      Iron Lab je moderní fitness centrum v srdci města, kde spojujeme kvalitní vybavení, profesionální přístup a
+      přátelskou atmosféru.
+      Ať už jsi začátečník nebo zkušený sportovec, u nás najdeš vše, co potřebuješ k dosažení svých cílů – od silového
+      tréninku, přes funkční cvičení až po individuální tréninkové plány.
+      Každý den pomáháme lidem měnit svůj životní styl a objevovat svůj skutečný potenciál.
     </p>
-    <h3 class="mt-4 text-uppercase fw-bold nadpissrovnani">Trenéři</h3>
+
+    <h3 class="mt-5 text-uppercase fw-bold text-center">Náš tým</h3>
     <div class="row">
-        <div class="col-md-6 col-lg-4">
-            <div class="card bg-light text-dark mb-4">
-                <img src="kareltrener.jpg" class="card-img-top rounded-top" alt="Karel Krajča">
-                <div class="card-body">
-                    <h5 class="fw-bold">Karel Krajča, předseda oddílu</h5>
-                    <p class="text-danger fw-bold">3. DAN, trenér 2. třídy, zkušební komisař</p>
-                    <p>
-                        S Judem začal ve svých 6 letech. Během své bohaté sportovní kariéry závodil za družstvo Prostějova,
-                        v dorostenecké lize, trénoval v Brně a závodil za družstvo Zlína v 1. lize mužů. Trenérské činnosti se věnuje již 10 let.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card bg-light text-dark mb-4">
-                <img src="miratrener.jpg" class="card-img-top rounded-top" alt="Miroslav Mimránek">
-                <div class="card-body">
-                    <h5 class="fw-bold">Miroslav Mimránek</h5>
-                    <p class="text-danger fw-bold">2. DAN, trenér 2. třídy, zkušební komisař a rozhodčí 2. třídy, čestný předseda oddílu</p>
-                    <p>
-                        Za více než třicet let trenérské činnosti vychoval mnoho zdatných judistů. Byl dlouholetým předsedou
-                        uherskohradišťského oddílu juda, v současné době je jeho čestným předsedou.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card bg-light text-dark mb-4">
-                <img src="lada.jpg" class="card-img-top rounded-top" alt="Vladislav Novák">
-                <div class="card-body">
-                    <h5 class="fw-bold">Vladislav Novák</h5>
-                    <p class="text-danger fw-bold">1. DAN, trenér 3. třídy</p>
-                    <p>
-                        Mladý trenér s vášní pro judo. Specializuje se na výuku mládeže a začínajících judistů.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card bg-light text-dark mb-4">
-              <img src="tondatrener.jpg" class="card-img-top rounded-top" alt="Antonín Olchava">
-              <div class="card-body">
-                  <h5 class="fw-bold">Antonín Olchava</h5>
-                  <p class="text-danger fw-bold">1. DAN, trenér 3. třídy, rozhodčí 3. třídy</p>
-                  <p> 
-                    S Judem začal ve svých 8 letech a od té doby se mu věnuje naplno. V současné době je aktivním trenérem a rozhodčím.
-                  </p>
-              </div>
-          </div>
-      </div>
       <div class="col-md-6 col-lg-4">
         <div class="card bg-light text-dark mb-4">
-            <img src="michaltrener.jpg" class="card-img-top rounded-top" alt="Michal Ondrašík">
-            <div class="card-body">
-                <h5 class="fw-bold">Michal Ondrašík</h5>
-                <p class="text-danger fw-bold">1. KYU, trenér 3. třídy</p>
-                <p>
-                  S Judem začal ve svých 6 letech přímo v Uherském Hradišti, kde strávil celou svou sportovní kariéru. Závodil za místní tým, postupně získával zkušenosti a úspěchy na regionální i republikové úrovni. Dnes působí jako trenér ve stejném městě, kde vyrůstal, a je inspirací pro mladé judisty z celého okolí.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="card bg-light text-dark mb-4">
-          <img src="marektrener.jpg" class="card-img-top rounded-top" alt="Marek Šmíd">
+          <img src="karel.jpg" class="card-img-top rounded-top" alt="Karel Novák">
           <div class="card-body">
-              <h5 class="fw-bold">Marek Šmíd</h5>
-              <p class="text-danger fw-bold">1. DAN, trenér 3. třídy, rozhodčí 3. třídy</p>
-              <p>
-                S Judem začal ve svých 9 letech v Uherském Hradišti a po celou svou sportovní dráhu zůstal věrný místnímu klubu. Vybojoval řadu medailí na regionálních soutěžích a dosáhl i několika úspěchů na celostátní úrovni. Nyní zde již několik let působí jako trenér a pomáhá rozvíjet mladé talenty v judu.
-              </p>
+            <h5 class="fw-bold">Karel Novák – Hlavní trenér</h5>
+            <p class="text-danger fw-bold">Certifikovaný trenér, specialista na silový trénink</p>
+            <p>
+              Více než 15 let zkušeností v oblasti fitness. Pomohl stovkám klientů nejen zhubnout, ale i vybudovat
+              funkční a silné tělo. Věří, že každý může překonat své limity.
+            </p>
           </div>
+        </div>
       </div>
-  </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-light text-dark mb-4">
+          <img src="trenerka.jpg" class="card-img-top rounded-top" alt="Petra Králová">
+          <div class="card-body">
+            <h5 class="fw-bold">Petra Králová – Kondiční trenérka</h5>
+            <p class="text-danger fw-bold">Trenérka funkčního tréninku a mobility</p>
+            <p>
+              Petra se zaměřuje na přirozený pohyb, stabilitu a zlepšení kondice. Pomáhá lidem nejen cvičit, ale i cítit
+              se dobře ve vlastním těle. Vede také skupinové lekce.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-light text-dark mb-4">
+          <img src="tomas.jpg" class="card-img-top rounded-top" alt="Tomáš Dvořák">
+          <div class="card-body">
+            <h5 class="fw-bold">Tomáš Dvořák – Výživový poradce</h5>
+            <p class="text-danger fw-bold">Specialista na stravu pro sportovce a redukci váhy</p>
+            <p>
+              Věří, že správná výživa je základ každého výsledku. Vytváří osobní jídelníčky, radí s doplňky stravy a
+              pomáhá klientům změnit návyky udržitelně a efektivně.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  </div>
 </body>
+
 </html>

@@ -1,83 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Lab</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Lab</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- NAVBAR YETI, tiny mce udělat,stahnout font awesome, vlajky -->
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Iron Lab</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="Home.html">Domů
-                <span class="visually-hidden">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kontakty.html">Kontakt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sluzby.html">Služby</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="o nas.html">O nás</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="cenik.html">Ceník</a> <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla -->
-                <a class="dropdown-item" href="rezervace.html">Rezervace</a> <!-- tady udělam ten form na udělaní registrace -->
-                <a class="dropdown-item" href="galerie.html">Galerie</a> <!-- splnit nějaké random fotky z posilky -->
-                <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+  <!--  NAVBAR YETI, tiny mce udělat,stahnout font awesome, vlajky  -->
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">Iron Lab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakty.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sluzby.html">Služby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o nas.html">O nás</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Další</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="treninky.html">Ceník</a>
+              <a class="dropdown-item" href="rezervace.html">Rezervace</a>
+              <a class="dropdown-item" href="galerie.html">Galerie</a>
+              <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Adresa?..." />
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Najít</button>
+        </form>
       </div>
-    </nav>
-      <div id="demo" class="carousel slide" data-bs-ride="carousel">
-        <!-- indikator -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-        </div>
-      
-        <!-- carousel ciste sam s obrazky fitko -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="fit1.png" alt="Los Angeles" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="fit2.png" alt="Chicago" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="fit3.png" alt="New York" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="fit4.png" alt="dalsifotka" class="d-block w-100">
-          </div>
-        </div>
-      
-        <!-- doleva doprava -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner" style="max-height: 600px;">
+      <div class="carousel-item active">
+        <img src="fit1.png" alt="" class="d-block w-100 h-100 object-fit-cover" />
       </div>
+      <div class="carousel-item">
+        <img src="fit2.png" alt="" class="d-block w-100 h-100 object-fit-cover" />
+      </div>
+      <div class="carousel-item">
+        <img src="fit3.png" alt="" class="d-block w-100 h-100 object-fit-cover" />
+      </div>
+      <div class="carousel-item">
+        <img src="fit4.jpg" alt="" class="d-block w-100 h-100 object-fit-cover" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- text -->
+  <div class="container mt-5 text-center">
+    <h2>Vítejte v Iron Lab</h2>
+    <p class="lead">Moderní fitness centrum v srdci města. Nabízíme profesionální vybavení, zkušené trenéry a přátelskou
+      atmosféru.</p>
+  </div>
+
+  <!-- služby -->
+  <div class="container mt-5">
+    <h3 class="text-center mb-4">Naše služby</h3>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fas fa-user-friends fa-3x mb-3 text-primary"></i>
+        <h5>Osobní tréninky</h5>
+        <p>Individuální přístup podle tvých cílů.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-spa fa-3x mb-3 text-success"></i>
+        <h5>Relaxační zóna</h5>
+        <p>Sauna, masáže a regenerace pro tvoje tělo.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-apple-alt fa-3x mb-3 text-danger"></i>
+        <h5>Výživové poradenství</h5>
+        <p>Pomůžeme ti se zdravým jídelníčkem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- dalsi tlacitka docela se mne to libilo jako navrh tak jsem to zkusikl -->
+  <div class="container text-center mt-5 mb-5">
+    <a href="sluzby.html" class="btn btn-outline-primary me-2"><i class="fas fa-cogs me-1"></i>Naše služby</a>
+    <a href="rezervace.html" class="btn btn-outline-success"><i class="fas fa-calendar-check me-1"></i>Rezervace</a>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2023 Iron Lab. Všechna práva vyhrazena.</p>
+    <p class="mb-0">Dokumentace: mediafire link </p>
+  </footer>
+
 </body>
 </html>

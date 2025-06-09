@@ -1,59 +1,70 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progres Bar</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progres Bar</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Iron Lab</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="Home.html">Domů
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="kontakty.html">Kontakt</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sluzby.html">Služby</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="o nas.html">O nás</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="cenik.html">Ceník</a> <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla -->
-                  <a class="dropdown-item" href="rezervace.html">Rezervace</a> <!-- tady udělam ten form na udělaní registrace -->
-                  <a class="dropdown-item" href="galerie.html">Galerie</a> <!-- splnit nějaké random fotky z posilky -->
-                  <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- Progres Bar dodělat 30% = 06.06.2025, 01.06.2025 = 10% -->
-      <div class="progress" style="height:20px">
-        <div class="progress-bar" style="width:10%;"></div>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html">Iron Lab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html">Domů
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakty.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sluzby.html">Služby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o nas.html">O nás</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Další</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="treninky.html">Ceník</a>
+              <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla -->
+              <a class="dropdown-item" href="rezervace.html">Rezervace</a>
+              <!-- tady udělam ten form na udělaní registrace -->
+              <a class="dropdown-item" href="galerie.html">Galerie</a> <!-- splnit nějaké random fotky z posilky -->
+              <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Adresa?...">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Najít</button>
+        </form>
       </div>
-      <div class="text-center">10% 01.01.2025</div>
-      <div class="progress" style="height:20px">
-        <div class="progress-bar" style="width:40%;"></div>
-      </div>
-      <div class="text-center">40% 06.06.2025</div>
+    </div>
+  </nav>
+  <!-- Progres Bar dodělat 30% = 06.06.2025, 01.06.2025 = 10% -->
+  <div class="progress" style="height:20px">
+    <div class="progress-bar" style="width:10%;"></div>
+  </div>
+  <div class="text-center">10% 01.01.2025</div>
+  <div class="progress" style="height:20px">
+    <div class="progress-bar" style="width:40%;"></div>
+  </div>
+  <div class="text-center">40% 06.06.2025</div>
+  <div class="progress" style="height:20px">
+    <div class="progress-bar" style="width:70%;"></div>
+  </div>
+  <div class="text-center">70% 09.06.2025</div>
 </body>
+
 </html>
