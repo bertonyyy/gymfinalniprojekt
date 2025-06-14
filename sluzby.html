@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Lab - Služby</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Iron Lab - Služby</title>
+</head>
+
+<body>
+    <!-- navbar yeti, font awesome splneny a flag jeste dodelat-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">Iron Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakty.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sluzby.html">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o nas.html">O nás</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Další</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="treninky.html">Ceník</a>
+                            <a class="dropdown-item" href="rezervace.html">Rezervace</a>
+                            <a class="dropdown-item" href="galerie.html">Galerie</a>
+                            <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- prihlaseni registrace -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i>Přihlášení
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrace.html">
+                            <i class="fas fa-user-plus me-1"></i>Registrace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <h2 class="text-uppercase fw-bold text-center mb-5">Naše služby</h2>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <i class="fas fa-dumbbell fa-3x text-danger mb-3"></i>
+                        <h5 class="card-title fw-bold">Silový trénink</h5>
+                        <p class="card-text">Moderní posilovna s profesionálním vybavením pro začátečníky i pokročilé
+                            sportovce.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <i class="fas fa-user-ninja fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title fw-bold">Kurzy juda</h5>
+                        <p class="card-text">Pravidelné tréninky juda pro děti, mládež i dospělé pod vedením zkušených
+                            trenérů.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <i class="fas fa-calendar-check fa-3x text-success mb-3"></i>
+                        <h5 class="card-title fw-bold">Rezervace lekcí</h5>
+                        <p class="card-text">Online rezervace skupinových tréninků, individuálních lekcí nebo
+                            konzultací.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <i class="fas fa-heartbeat fa-3x text-danger mb-3"></i>
+                        <h5 class="card-title fw-bold">Kondiční trénink</h5>
+                        <p class="card-text">Programy zaměřené na zlepšení fyzické kondice, spalování tuků a zdravý
+                            životní styl.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <i class="fas fa-spa fa-3x text-warning mb-3"></i>
+                        <h5 class="card-title fw-bold">Regenerace</h5>
+                        <p class="card-text">Poradenství v oblasti regenerace, mobilizace těla a prevence zranění.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x text-info mb-3"></i>
+                        <h5 class="card-title fw-bold">Skupinové lekce</h5>
+                        <p class="card-text">Motivační cvičení v malých skupinách pod vedením trenéra.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="accordion">
+
+  <div class="card mt-5">
+    <div class="card-header">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        MMA tréninky
+      </a>
+    </div>
+    <div id="collapseOne" class="collapsed btn" data-bs-parent="#accordion">
+      <div class="card-body text-center">
+        Naše MMA tréninky jsou určeny pro všechny úrovně, od začátečníků po pokročilé. Zaměřujeme se na techniky
+        bojových umění, kondiční přípravu a sebeobranu. Tréninky probíhají pod vedením zkušených trenérů, kteří vám
+        pomohou zlepšit vaši techniku a fyzickou kondici.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Skupinové lekce
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body text-center">
+        Naše skupinové lekce jsou skvělou příležitostí, jak se motivovat a cvičit v kolektivu. Nabízíme různé
+        typy lekcí, včetně kruhového tréninku, aerobiku a dalších. Skupinové lekce jsou vedeny profesionálními
+        trenéry, kteří vám pomohou dosáhnout vašich cílů a zlepšit vaši fyzickou kondici.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        Silový trénink
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body text-center">
+        Naše silové tréninky jsou zaměřeny na zlepšení vaší síly, vytrvalosti a celkové fyzické kondice. Používáme
+        moderní vybavení a techniky, které vám pomohou dosáhnout vašich cílů. Tréninky jsou přizpůsobeny vašim
+        individuálním potřebám a úrovni.
+      </div>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+</body>
+
+</html>

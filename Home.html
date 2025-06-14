@@ -5,61 +5,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iron Lab</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 
 <body>
-  <!--  NAVBAR YETI, tiny mce udělat,stahnout font awesome, vlajky  -->
-  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="Home.html">Iron Lab</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarColor02">
-        <!-- navbar vlvel -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="Home.html">Domů</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kontakty.html">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sluzby.html">Služby</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="o nas.html">O nás</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Další</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="treninky.html">Ceník</a>
-              <a class="dropdown-item" href="rezervace.html">Rezervace</a>
-              <a class="dropdown-item" href="galerie.html">Galerie</a>
-              <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
+  <!-- navbar yeti, font awesome splneny a flag jeste dodelat-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">Iron Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakty.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sluzby.html">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o nas.html">O nás</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Další</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="treninky.html">Ceník</a>
+                            <a class="dropdown-item" href="rezervace.html">Rezervace</a>
+                            <a class="dropdown-item" href="galerie.html">Galerie</a>
+                            <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- prihlaseni registrace -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i>Přihlášení
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrace.html">
+                            <i class="fas fa-user-plus me-1"></i>Registrace
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </li>
-        </ul>
-  
-        <!--vyhledání-->
-        <form class="d-flex mx-auto" style="max-width: 300px;">
-          <input class="form-control me-2" type="search" placeholder="Adresa?..." />
-          <button class="btn btn-secondary" type="submit">Najít</button>
-        </form>
-  
-        <!-- prihlaseni registrace -->
-        <div class="d-flex">
-          <a href="prihlaseni.html" class="btn btn-outline-light me-2">Přihlášení</a>
-          <a href="registrace.html" class="btn btn-outline-light">Registrace</a>
         </div>
-      </div>
-    </div>
-  </nav>
-  
+    </nav>
 
   <!-- carousel -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -80,7 +80,7 @@
         <img src="fit3.png" alt="" class="d-block w-100 h-100 object-fit-cover" />
       </div>
       <div class="carousel-item">
-        <img src="fit4.png" alt="" class="d-block w-100 h-100 object-fit-cover" />
+        <img src="fit4.jpg" alt="" class="d-block w-100 h-100 object-fit-cover" />
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -124,12 +124,23 @@
   <div class="container text-center mt-5 mb-5">
     <a href="sluzby.html" class="btn btn-outline-primary me-2"><i class="fas fa-cogs me-1"></i>Naše služby</a>
     <a href="rezervace.html" class="btn btn-outline-success"><i class="fas fa-calendar-check me-1"></i>Rezervace</a>
-  </div>
+  </div>     
 
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">© 2023 Iron Lab. Všechna práva vyhrazena.</p>
     <p class="mb-0">Dokumentace: mediafire link </p>
   </footer>
 
+  <!-- 
+  Knihovny nainstalovasné s využitím NPM
+Bude využit Bootstrap nebo podobný framework, šablona pro BS, bude využito Font-Awesome, knihovna Flag-Icons a případně další knihovny. 
+Projekt bude obsahovat carousel (aspoň 4 fotky), karty, progress bar pro popis postupu projektu, tabulku (s využitím bootstrapovských tříd), navbar s využitím dropdownu.
+V projektu bude smysluplně využita knihovna pro vlajky
+Součástí projektu bude stránka s kontaktním formulářem, kde bude možné zadat emailovou adresu a pak bude velké pole (text area) pro samotný text. Přidáte textovému poli WYSIWYG editor (např. CKEDITOR nebo TINY MCE, přidáte opět composerem nebo přes npm).
+Součástí navbaru bude také vpravo odkaz pro přihlášení a registraci, stránka pro přihlášení zobrazí políčko pro login a heslo, stránka pro registraci zobrazí login, 2x heslo, jméno, příjmení, email, stát (selectem, stačí 10 států, první hodnota bude prázdná). Formulář pro registraci bude s floating labels a s input group.
+Součástí webu budou smysluplně využité taby (https://www.w3schools.com/bootstrap5/bootstrap_navs.php - tzv. toggeable/dynamic tabs) a také accordion (https://www.w3schools.com/bootstrap5/bootstrap_collapse.php - položka accordion)
+Web bude nahraný na hostingu zdenekhrdina.cz a na githubu. Na hostingu zdenekhrdina.cz to bude tak, že na homepage Vaší domény bude seznam odkazů na projekty, která na daném hostingu máte. Nyní tam bude pouze jeden odkaz na tento projekt
+Součástí bude dokumentace, která bude obsahovat následujíc položky:
+  -->
 </body>
 </html>

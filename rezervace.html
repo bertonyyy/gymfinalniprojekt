@@ -1,14 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Lab - Přihlášení</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Iron Lab - Rezervace</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Iron Lab - Rezervace</title>
 </head>
-
 <body>
     <!-- navbar yeti, font awesome splneny a flag jeste dodelat-->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -58,23 +59,49 @@
             </div>
         </div>
     </nav>
-      <div class="container mt-5">
-  <h2 class="mb-4 text-center">Přihlášení</h2>
-  <form class="mx-auto" style="max-width: 400px;" action="home.html">
-    <!-- mail -->
-    <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="email" placeholder="Zadej email" name="email" required>
-      <label for="email">Email</label>
-    </div>
+    <form class="ms-auto me-auto w-25 mt-5 justify-content-center" action="rezervace.html">
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Vlož E-mail..." name="email">
+        </div>
+        <div>
+            <label for="datum" class="form-label">Datum rezervace:</label>
+            <input type="date" class="form-control" id="datum" name="datum">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="lekce" class="form-label">Vyber si lekci:</label>
+            <input class="form-control" list="lekce-seznam" id="lekce" name="lekce"
+                placeholder="Začni psát název lekce">
+            <datalist id="lekce-seznam">
+                <option value="Box">
+                <option value="MMA">
+                <option value="Fit Jumping">
+                <option value="Kruhový trénink">
+                <option value="KickBoxing">
+            </datalist>
+        </div>
+        <div class="mb-3">
+            <label for="vzkaz" class="form-label">Vzkaz nebo poznámka:</label>
+           <textarea id="vzkaz" name="vzkaz" class="form-control"></textarea>
 
-    <!-- heslo -->
-    <div class="form-floating mb-4">
-      <input type="password" class="form-control" id="pwd" placeholder="Zadej heslo" name="pswd" required>
-      <label for="pwd">Heslo</label>
-    </div>
+        </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Zapamatovat si mě
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Rezervovat</button>
+    </form>
+</form>
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+<script>
+  ClassicEditor
+    .create(document.querySelector('#vzkaz'))
+    .catch(error => {
+      console.error(error);
+    });
+</script>
 
-    <button type="submit" class="btn btn-primary w-100">Přihlásit se</button>
-  </form>
-</div>
 </body>
 </html>

@@ -6,79 +6,63 @@
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
   <link rel="stylesheet" href="style.css">
-  <title>Iron Lab</title>
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <title>Iron Lab - Spolužáci</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="Home.html">Iron Lab</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="Home.html">Domů
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kontakty.html">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sluzby.html">Služby</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="o nas.html">O nás</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Další</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="treninky.html">Ceník</a>
-              <!-- klasicky cenik nejaka tabulka na měsíční bla bla bla - splneno -->
-              <a class="dropdown-item" href="rezervace.html">Rezervace</a>
-              <!-- tady udělam ten form na udělaní registrace - dodělat-->
-              <a class="dropdown-item" href="galerie.html">Galerie</a>
-               <!-- splnit nějaké random fotky z posilky - splněno -->
-              <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="search" placeholder="Adresa?...">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Najít</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <div class="list-group w-50 text-center justify-content-center mx-auto mt-5">
-    <a href="https://pauloesc.4fan.cz/" class="list-group-item list-group-item-action">Pavel Chladil - Web takový jaký
-      si vymyslel</a>
-    <a href="https://supermoto.jednoduse.cz/" class="list-group-item list-group-item-action">Lukáš Marcaník - Prodejna
-      motorek</a>
-    <a href="https://jditrebadomu.cekuj.net/" class="list-group-item list-group-item-action">Filip Blaha - Maxík
-      psík</a>
-    <a href="https://projekt.9e.cz/" class="list-group-item list-group-item-action">Robin Čambal - jeho krásný web</a>
-    <a href="https://bootstrapovskyprojektik.jednoduse.cz/" class="list-group-item list-group-item-action">David
-      Přívratský - Web o konzolích</a>
-    <a href="https://matej-vosic.jednoduse.cz/" class="list-group-item list-group-item-action">Matěj Vosáhlo - Matýskův
-      web</a>
-    <a href="https://galaxygas.8u.cz/" class="list-group-item list-group-item-action">Daniel Bradáč - Vesmír</a>
-    <a href="https://grandeutravel.8u.cz/" class="list-group-item list-group-item-action">Marek Mitáček - Cestování</a>
-    <a href="https://super-car.cekuj.net/" class="list-group-item list-group-item-action">Viktor Varmuža - Porsche</a>
-    <a href="https://project-bmw.maweb.eu/" class="list-group-item list-group-item-action">Oliver Jurčík - BMW</a>
-    <a href="https://realmadridweb.9e.cz/" class="list-group-item list-group-item-action">Daniel Dvořan - Real
-      Madrid</a>
-    <a href="https://richardprojekt.cekuj.net/" class="list-group-item list-group-item-action">Ricahrd Doubrava -
-      Projekt</a>
-    <a href="https://fialova-barva.jecool.net/" class="list-group-item list-group-item-action">Maximilián Zálešák -
-      Fialová barva</a>
-    <a href="https://hostetin.tode.cz/" class="list-group-item list-group-item-action">Tereza Janůjová - Hoštětín</a>
-    <a href="https://nejlepsistranka.jednoduse.cz/" class="list-group-item list-group-item-action">Marek Šašinka -
-      Mašinka</a>
-  </div>
+   <!-- navbar yeti, font awesome splneny a flag jeste dodelat-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">Iron Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakty.html">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sluzby.html">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o nas.html">O nás</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Další</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="treninky.html">Ceník</a>
+                            <a class="dropdown-item" href="rezervace.html">Rezervace</a>
+                            <a class="dropdown-item" href="galerie.html">Galerie</a>
+                            <a class="dropdown-item" href="progresbar.html">Progres Bar</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- prihlaseni registrace -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i>Přihlášení
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrace.html">
+                            <i class="fas fa-user-plus me-1"></i>Registrace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <div>
+  <p>bohužel nemám odkazy</p>
+ </div>
+  
 </body>
 
 </html>
